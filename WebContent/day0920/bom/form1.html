@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="myform">
+		이름 : <input type="text" name="irum">
+		<input type="button", value="확인" onclick="checkText()">
+	</form>
+	<script>
+		function checkText(){
+			if(document.myform.irum.value)
+				alert("이름은"+document.myform.elements[0].value+"입니다.")
+			else
+				alert("이름을 입력하지 않았습니다.")
+		}
+	</script>
+
+</body>
+</html>
